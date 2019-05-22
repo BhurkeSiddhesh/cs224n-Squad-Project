@@ -15,7 +15,7 @@ python code/main.py --experiment_name=bidaf_best --dropout=0.15 --batch_size=60 
 * The settings to run the RNET model are:
 
 ```
-python code/main.py --experiment_name=rnet_best --dropout=0.20 --batch_size=20 --hidden_size_encoder=200 --embedding_size=300 --do_char_embed=False --add_highway_layer=False --rnet_attention=True --bidaf_attention=False --answer_pointer_RNET=True --smart_span=True--mode=official_eval \
+python code/main.py --experiment_name=rnet_best --dropout=0.20 --batch_size=20 --hidden_size_encoder=200 --embedding_size=300 --do_char_embed=False --add_highway_layer=False --rnet_attention=True --bidaf_attention=False --answer_pointer_RNET=True --smart_span=True --mode=official_eval \
 --json_in_path=data/tiny-dev.json \
 --json_out_path=predictions_rnet.json \
 --ckpt_load_dir=experiments/rnet_best/best_checkpoint
